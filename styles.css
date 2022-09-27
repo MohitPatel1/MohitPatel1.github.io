@@ -1,0 +1,35 @@
+html{
+    font-size: 32px;
+}
+
+body{
+    margin: 0;
+    font-size: 62.5%;
+}
+
+#intro{
+    text-align: center;
+    background-color: peachpuff;
+}
+
+#intro h1{
+    margin-top: 0;
+}
+
+#intro img{
+    display: block;
+    margin: auto;
+    border-radius: 2rem;
+    height: 10rem;   
+}
+
+#score{
+    background-color: #FFF9A5;
+}
+#hobby{
+    background-color: #69A197;
+}
+    
+
+
+
