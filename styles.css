@@ -12,11 +12,14 @@ body{
     background-color: peachpuff;
 }
 
-#intro h1{
+#intro > h1{
     margin-top: 0;
 }
-
-#intro img{
+#intro > h2{
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+#intro > img{
     display: block;
     margin: auto;
     border-radius: 2rem;
@@ -25,9 +28,32 @@ body{
 
 #score{
     background-color: #FFF9A5;
+    text-align: center;
+    padding-bottom: 1rem;
 }
+#score > h1{
+    margin-top: 0;
+    padding-top: 1rem;
+}
+#score > table{
+    margin: auto;
+    width: 20%;
+}
+
 #hobby{
     background-color: #69A197;
+    text-align: center;
+}
+#hobby > h2{
+    display: inline-block;
+    padding-top: 1rem;
+    margin-top: 0;
+    width: 20%;
+}
+#hobby > ul{
+    margin: auto;
+    width: 20%;
+    text-align: left;
 }
     
 
