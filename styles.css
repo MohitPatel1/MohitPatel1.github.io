@@ -7,9 +7,39 @@ body{
     font-size: 62.5%;
 }
 
+nav{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #7733FF ;
+    border-radius: 0.3rem;
+    
+}
+nav a{
+    text-decoration: none;  
+    color: #CCE0E0;
+    background-color:(229, 145, 20);
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+nav a:visited{
+    color: #CCE0E0;
+}
+
+.nav{
+    width: 5rem;
+    box-sizing:border-box;
+    background-color: #925CFF;
+    height: 23px;
+    margin-left: 8%;
+}
+.navBackground{
+    background-color: #925CFF;
+}
+
 #intro{
     text-align: center;
-    background-color: peachpuff;
+    background-color: #ffdab9;
 }
 
 #intro > h1{
