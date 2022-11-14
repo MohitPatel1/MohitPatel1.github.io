@@ -1,5 +1,5 @@
 # portfolio
-my protfolio website: mohitpatel1.github.io/portfolio
+my [protfolio website](mohitpatel1.github.io/portfolio)
 
 > day 5:
 - typewriter effect added
