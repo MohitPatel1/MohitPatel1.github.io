@@ -1,36 +1,43 @@
 document.addEventListener("DOMContentLoaded" , () => {
     
-    const dynamicContent = document.querySelector("#dynamic-text");
+    let dynamicContent = document.querySelector("#dynamic-text");
     console.log(dynamicContent);
     const phrases = ["Student..." , "Developer..." , "Sport person..." ];
+    let phraseIndex = 0
     let letterInx = 0 ;
+    let typingSpeed = 150;
+    let erasingSpeed = 100
     function printLetters(phrase){
-        if (letterInx < phrase.length){
+        if(letterInx === phrase.length){ 
+            clearLetters(phrase);
+        }
+        else if (letterInx <= phrase.length){
                 dynamicContent.textContent += phrase.charAt(letterInx);
                 letterInx += 1;
                 setTimeout(function () {
                     console.log(1)
                     printLetters(phrase);
-            } , 300)
-        }
-        if(letterInx==phrase.length){
-            console.log(2)
-            clearLetters(phrase)
+            } , 200)
         }
     }
+
     function clearLetters(phrase){
-        if (letterInx > 0) {
-            console.log(3)
-            dynamicContent.textContent -= phrase.charAt(letterInx);
+        if (letterInx == -1){
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            letterInx=0;
+            printLetters(phrases[phraseIndex]);
+        }
+        else if (letterInx > -1) {
+            dynamicContent.textContent = dynamicContent.textContent.substring(0 ,dynamicContent.textContent.length - 1);
+            console.log(dynamicContent.textContent)
             letterInx -= 1;
             setTimeout(function () {
-                console.log(4)
                 clearLetters(phrase);
-            } , 300)
+            } , 100)
         }
     }
     
-    printLetters(phrases[0])
+    printLetters(phrases[phraseIndex]);
     
 
     
