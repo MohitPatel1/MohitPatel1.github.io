@@ -1,7 +1,10 @@
 # portfolio
-my protfolio website
+my protfolio website: mohitpatel1.github.io/portfolio
 
->day4:
+> day 5:
+- typewriter effect added
+
+> day4:
 - added my photos and aplied grid 
 - image - [4.1](/progressImages/day4.png)
 
