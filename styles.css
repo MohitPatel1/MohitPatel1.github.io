@@ -90,7 +90,6 @@ nav a:visited{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: auto 500px ;
-    minmax(auto, 1fr)
 }
 #gridPhoto1{
     grid-area: 1 / 1/ span 1/ span 2;
